@@ -1,0 +1,67 @@
+# File Management System
+
+## Project Report
+
+This project is a **File Management System** developed in Java. It allows users to create, read, update, and delete files within a specified directory. The system provides a simple command-line interface for managing files efficiently.
+
+### Features
+
+- List all files in a directory
+- Create new files
+- Read file contents
+- Update existing files
+- Delete files
+
+### Technologies Used
+
+- Java (JDK 8+)
+- Standard Java IO libraries
+
+---
+
+## How to Run
+
+1. **Clone or Download the Repository**
+    ```bash
+    git clone <repository-url>
+    cd FileManagementSystem
+    ```
+
+2. **Compile the Java Files**
+    ```bash
+    javac src/*.java
+    ```
+
+3. **Run the Application**
+    ```bash
+    java -cp src Main
+    ```
+
+4. **Using the Application**
+    - When the application starts, a menu will appear in the terminal.
+    - Enter the number corresponding to the action you want to perform:
+        - List files
+        - Create a new file
+        - Read a file
+        - Update a file
+        - Delete a file
+    - Follow the prompts to provide file names or content as needed.
+    - To exit, select the exit option from the menu.
+
+---
+
+## Presentation Concept
+
+**Title:** File Management System in Java
+
+**Slides Outline:**
+1. **Introduction**
+    - Purpose and scope of the project
+2. **Features**
+    - Overview of file operations supported
+3. **Architecture**
+    - Brief on Java classes and structure
+4. **Demo**
+    - Screenshots or live demo of the CLI
+5. **Conclusion**
+    - Benefits and possible future improvements
