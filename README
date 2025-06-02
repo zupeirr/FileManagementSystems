@@ -1,67 +1,34 @@
-# File Management System
+# 📁 File Management System (Java Console Application)
 
-## Project Report
+## 🧾 Description
 
-This project is a **File Management System** developed in Java. It allows users to create, read, update, and delete files within a specified directory. The system provides a simple command-line interface for managing files efficiently.
+**FileManagementSystem** is a simple Java-based command-line application that enables users to manage text files within a local directory. It demonstrates core file handling operations such as creating, reading, updating, deleting, listing, and searching files in Java.
 
-### Features
-
-- List all files in a directory
-- Create new files
-- Read file contents
-- Update existing files
-- Delete files
-
-### Technologies Used
-
-- Java (JDK 8+)
-- Standard Java IO libraries
+This project is ideal for beginners looking to understand how file input/output and basic CLI interactions work in Java.
 
 ---
 
-## How to Run
+## ✅ Features
 
-1. **Clone or Download the Repository**
-    ```bash
-    git clone <repository-url>
-    cd FileManagementSystem
-    ```
-
-2. **Compile the Java Files**
-    ```bash
-    javac src/*.java
-    ```
-
-3. **Run the Application**
-    ```bash
-    java -cp src Main
-    ```
-
-4. **Using the Application**
-    - When the application starts, a menu will appear in the terminal.
-    - Enter the number corresponding to the action you want to perform:
-        - List files
-        - Create a new file
-        - Read a file
-        - Update a file
-        - Delete a file
-    - Follow the prompts to provide file names or content as needed.
-    - To exit, select the exit option from the menu.
+- **Create a new file**: Add a new text file with custom content.
+- **Read a file**: Display the contents of a selected file.
+- **Update a file**: Overwrite an existing file’s contents.
+- **Delete a file**: Remove a file permanently from the system.
+- **List all files**: Show all files available in the designated directory.
+- **Search for a file**: Check if a file exists and get its full path.
+- **Exit**: Safely close the program.
 
 ---
 
-## Presentation Concept
+## 🚀 How to Run
 
-**Title:** File Management System in Java
+### Prerequisites:
+- Java installed (JDK 8 or above)
+- Terminal/Command Prompt
+- Git (for version control, optional)
 
-**Slides Outline:**
-1. **Introduction**
-    - Purpose and scope of the project
-2. **Features**
-    - Overview of file operations supported
-3. **Architecture**
-    - Brief on Java classes and structure
-4. **Demo**
-    - Screenshots or live demo of the CLI
-5. **Conclusion**
-    - Benefits and possible future improvements
+### Steps:
+1. **Clone or Download this repository**:
+   ```bash
+   git clone https://github.com/your-username/FileManagementSystem.git
+   cd FileManagementSystem
