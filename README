@@ -1,34 +1,75 @@
-# 📁 File Management System (Java Console Application)
+# FileManagementSystem Project Report
 
-## 🧾 Description
+## 1. Introduction
 
-**FileManagementSystem** is a simple Java-based command-line application that enables users to manage text files within a local directory. It demonstrates core file handling operations such as creating, reading, updating, deleting, listing, and searching files in Java.
-
-This project is ideal for beginners looking to understand how file input/output and basic CLI interactions work in Java.
+**FileManagementSystem** is a Java-based command-line application designed for managing text files in a local directory. It serves as a practical demonstration of core file handling operations such as creating, reading, updating, deleting, listing, and searching files using Java. The project aims to help students understand essential file I/O concepts and basic user authentication.
 
 ---
 
-## ✅ Features
+## 2. Main Purpose and Goals
 
-- **Create a new file**: Add a new text file with custom content.
-- **Read a file**: Display the contents of a selected file.
-- **Update a file**: Overwrite an existing file’s contents.
-- **Delete a file**: Remove a file permanently from the system.
-- **List all files**: Show all files available in the designated directory.
-- **Search for a file**: Check if a file exists and get its full path.
-- **Exit**: Safely close the program.
+- Enable users to securely manage text files within a designated directory.
+- Demonstrate file management operations in Java.
+- Illustrate simple user authentication and role-based access (admin vs. client).
 
 ---
 
-## 🚀 How to Run
+## 3. Key Features
 
-### Prerequisites:
-- Java installed (JDK 8 or above)
-- Terminal/Command Prompt
-- Git (for version control, optional)
+### 3.1 User Authentication
 
-### Steps:
-1. **Clone or Download this repository**:
-   ```bash
-   git clone https://github.com/your-username/FileManagementSystem.git
-   cd FileManagementSystem
+- Hardcoded users with roles ("admin" or "client").
+- Login functionality managed in `AuthService`.
+- Incorrect login attempts provide informative error messages.
+- Users are routed to role-specific interfaces after login.
+
+### 3.2 File Management Operations
+
+Implemented in the `FileService` class and accessible via the UI:
+
+- **Create File:** Users can create new text files and add initial content.
+- **View Files:** List all files stored in the directory.
+- **Read File:** Display the content of a selected file.
+- **Update File:** Append new content to existing files.
+- **Delete File:** Remove files from the directory.
+
+### 3.3 User Interface
+
+- Command-line menus for admins and clients.
+- Admins can perform all file operations, clients have limited access.
+- "About" page describes the system and contributors.
+
+---
+
+## 4. Architecture Overview
+
+- **Main.java**: Entry point; launches login flow.
+- **ui/LoginPage.java**: Handles user login.
+- **ui/AdminPage.java**: Admin interface for file operations.
+- **ui/ClientPage.java**: Client interface for viewing/reading files.
+- **service/FileService.java**: Implements file operation logic.
+- **utils/AuthService.java**: Manages login/authentication.
+- **model/User.java**: User data model.
+
+---
+
+
+
+
+
+---
+
+## 6. Usage
+
+- Run the application via `Main.java`.
+- Login as either an admin or client (credentials are hardcoded).
+- Navigate through command-line menus to perform file operations.
+
+---
+
+## 7. Conclusion
+
+FileManagementSystem is a simple, educational Java project that demonstrates file handling and basic authentication. It is suitable for students and teams learning about backend concepts and command-line applications.
+
+---
+
